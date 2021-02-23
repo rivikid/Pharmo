@@ -683,13 +683,14 @@ a {
   .hero {
     padding-top: 0;
   }
+  .hero .grid {
+    height: 40vh;
+    align-items: center;
+  }
   .hero__content {
     margin-top: 2rem;
     text-align: left;
-    align-self: center;
-  }
-  .hero__image {
-    align-self: center;
+    min-height: 30vh;
   }
 }
 
