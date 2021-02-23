@@ -41,9 +41,9 @@
         </ul>
       </nav>
     </header>
-    <section class="block block--dark block--skewed-left hero">
+    <section class="block block--color block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-up">
           <h1 class="block__heading">Improving people’s health</h1>
           <p class="hero__tagline">
             Building on global pharmaceutical experience.
@@ -52,20 +52,25 @@
             >Take the medicine</a
           >
         </header>
-        <picture class="hero__image">
+        <picture class="hero__image" data-aos="zoom-in">
           <source
             type="image/webp"
-            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+            srcset="images/banner.webp 1x, images/banner-2x.webp 2x"
           />
           <source
             type="image/png"
-            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+            srcset="images/banner.png 1x, images/banner-2x.png 2x"
           />
-          <img class="hero__image" src="images/banner.png" alt="" />
+          <img class="hero__image" src="images/banner-2x.png" alt="" />
         </picture>
       </div>
     </section>
-    <section class="block container block-domain">
+
+    <section
+      class="block container block-domain"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <header class="block__header">
         <h2 class="block__heading">
           What area of health care are you interested in?
@@ -77,11 +82,7 @@
         </p>
       </header>
       <div class="input-group">
-        <input
-          type="text"
-          class="input"
-          placeholder="Enter domain name here..."
-        />
+        <input type="text" class="input" placeholder="Enter care here..." />
         <button class="btn btn--accent">
           <svg class="icon icon--white">
             <use href="images/sprite.svg#search"></use>
@@ -100,178 +101,182 @@
         <li>Body</li>
       </ul>
     </section>
-    <section class="block container block-plans" data-aos="fade-up"
-data-aos-duration="1000">
-    <div class="grid grid--1x3">
-      <div class="plan">
-        <div class="card card--secondary">
-          <header class="card__header">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$9</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--secondary badge--small">10% OFF</span>
-            <span class="plan__description">10 boxes of the herbals</span>
-          </header>
-          <!--  card__header because it can be used only in card component  -->
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Chamomile extract</li>
-              <li class="list__item">Strong effects</li>
-              <li class="list__item">Short healing time</li>
-            </ul>
-            <button class="btn btn--block btn--outline">Buy Now</button>
+    <section
+      class="block container block-plans"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$9</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">10 boxes of the herbals</span>
+            </header>
+            <!--  card__header because it can be used only in card component  -->
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Chamomile extract</li>
+                <li class="list__item">Strong effects</li>
+                <li class="list__item">Short healing time</li>
+              </ul>
+              <button class="btn btn--block btn--outline">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">VIP</h3>
+              <span class="plan__price">$12</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">20% OFF</span>
+              <span class="plan__description">15 boxes of the herbals</span>
+            </header>
+            <!--  card__header because it can be used only in card component  -->
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Chamomile extract</li>
+                <li class="list__item">Strong effects</li>
+                <li class="list__item">Short healing time</li>
+                <li class="list__item">2 extra boxes</li>
+              </ul>
+              <button class="btn btn--block btn--primary block-plans__btn">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">VIP plus</h3>
+              <span class="plan__price">$20</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">15 boxes of the herbals</span>
+            </header>
+            <!--  card__header because it can be used only in card component  -->
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Chamomile extract</li>
+                <li class="list__item">Strong effects</li>
+                <li class="list__item">Short healing time</li>
+                <li class="list__item">5 extra boxes</li>
+              </ul>
+              <button class="btn btn--block btn--outline">Buy Now</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="plan plan--popular">
-        <div class="card card--primary">
-          <header class="card__header">
-            <h3 class="plan__name">VIP</h3>
-            <span class="plan__price">$12</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--primary badge--small">20% OFF</span>
-            <span class="plan__description">15 boxes of the herbals</span>
-          </header>
-          <!--  card__header because it can be used only in card component  -->
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Chamomile extract</li>
-              <li class="list__item">Strong effects</li>
-              <li class="list__item">Short healing time</li>
-              <li class="list__item">2 extra boxes</li>
-            </ul>
-            <button class="btn btn--block btn--primary block-plans__btn">
-              Buy Now
-            </button>
-          </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2>We are focus on anybody</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          magni mollitia soluta autem cupiditate.
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#bowl"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Herbals</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            alias reprehenderit ipsam, voluptatibus animi saepe magnam quam
+            delectus. Asperiores, tempora.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
         </div>
-      </div>
-      <div class="plan">
-        <div class="card card--secondary">
-          <header class="card__header">
-            <h3 class="plan__name">VIP plus</h3>
-            <span class="plan__price">$20</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--secondary badge--small">10% OFF</span>
-            <span class="plan__description">15 boxes of the herbals</span>
-          </header>
-          <!--  card__header because it can be used only in card component  -->
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Chamomile extract</li>
-              <li class="list__item">Strong effects</li>
-              <li class="list__item">Short healing time</li>
-              <li class="list__item">5 extra boxes</li>
-            </ul>
-            <button class="btn btn--block btn--outline">Buy Now</button>
-          </div>
+        <picture data-aos="fade-up" data-aos-duration="1000">
+          <source
+            type="image/webp"
+            srcset="images/herbals.webp 1x, images/herbals-2x.webp 2x"
+          />
+          <source
+            type="image/jpeg"
+            srcset="images/herbals.jpg 1x, images/herbals-2x.jpg 2x"
+          />
+          <img
+            class="feature__image"
+            src="images/herbals-2x.jpg"
+            alt="Green herbals"
+          />
+        </picture>
+      </article>
+
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#therapy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Spiritual</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            alias reprehenderit ipsam, voluptatibus animi saepe magnam quam
+            delectus. Asperiores, tempora.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
         </div>
-      </div>
-  </section>
-  <section class="block container">
-    <header class="block__header">
-      <h2>We are focus on anybody</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        magni mollitia soluta autem cupiditate.
-      </p>
-    </header>
-    <article class="grid grid--1x2 feature">
-      <div class="feature__content" data-aos="fade-right">
-        <span class="icon-container">
-          <svg class="icon icon--primary">
-            <use href="images/sprite.svg#bowl"></use>
-          </svg>
-        </span>
-        <h3 class="feature__heading">Herbals</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere alias
-          reprehenderit ipsam, voluptatibus animi saepe magnam quam delectus.
-          Asperiores, tempora.
-        </p>
-        <a href="#" class="link-arrow">Learn More</a>
-      </div>
-      <picture>
-        <source
-          type="image/webp"
-          srcset="images/herbals.webp 1x, images/herbals-2x.webp 2x"
-        />
-        <source
-          type="image/jpeg"
-          srcset="images/herbals.jpg 1x, images/herbals-2x.jpg 2x"
-        />
-        <img
-          class="feature__image"
-          src="images/herbals-2x.jpg"
-          alt="Green herbals"
-        />
-      </picture>
-    </article>
-  
-    <article class="grid grid--1x2 feature">
-      <div class="feature__content">
-        <span class="icon-container">
-          <svg class="icon icon--primary">
-            <use href="images/sprite.svg#therapy"></use>
-          </svg>
-        </span>
-        <h3 class="feature__heading">Spiritual</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere alias
-          reprehenderit ipsam, voluptatibus animi saepe magnam quam delectus.
-          Asperiores, tempora.
-        </p>
-        <a href="#" class="link-arrow">Learn More</a>
-      </div>
-      <picture>
-        <source
-          type="image/webp"
-          srcset="images/spiritual.webp 1x, images/spiritual-2x.webp 2x"
-        />
-        <source
-          type="image/jpeg"
-          srcset="images/spiritual.jpg 1x, images/spiritual-2x.jpg 2x"
-        />
-        <img
-          class="feature__image"
-          src="images/spiritual-2x.jpg"
-          alt="Spiritual staff"
-        />
-      </picture>
-    </article>
-  
-    <article class="grid grid--1x2 feature">
-      <div class="feature__content">
-        <span class="icon-container">
-          <svg class="icon icon--primary">
-            <use href="images/sprite.svg#leaves"></use>
-          </svg>
-        </span>
-        <h3 class="feature__heading">Painless</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere alias
-          reprehenderit ipsam, voluptatibus animi saepe magnam quam delectus.
-          Asperiores, tempora.
-        </p>
-        <a href="#" class="link-arrow">Learn More</a>
-      </div>
-      <picture>
-        <source
-          type="image/webp"
-          srcset="images/painless.webp 1x, images/painless-2x.webp 2x"
-        />
-        <source
-          type="image/jpeg"
-          srcset="images/painless.jpg 1x, images/painless-2x.jpg 2x"
-        />
-        <img
-          class="feature__image"
-          src="images/painless-2x.jpg"
-          alt="Painless feeling"
-        />
-      </picture>
-    </article>
-  </section>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/spiritual.webp 1x, images/spiritual-2x.webp 2x"
+          />
+          <source
+            type="image/jpeg"
+            srcset="images/spiritual.jpg 1x, images/spiritual-2x.jpg 2x"
+          />
+          <img
+            class="feature__image"
+            src="images/spiritual-2x.jpg"
+            alt="Spiritual staff"
+          />
+        </picture>
+      </article>
+
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#leaves"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Painless</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            alias reprehenderit ipsam, voluptatibus animi saepe magnam quam
+            delectus. Asperiores, tempora.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/painless.webp 1x, images/painless-2x.webp 2x"
+          />
+          <source
+            type="image/jpeg"
+            srcset="images/painless.jpg 1x, images/painless-2x.jpg 2x"
+          />
+          <img
+            class="feature__image"
+            src="images/painless-2x.jpg"
+            alt="Painless feeling"
+          />
+        </picture>
+      </article>
+    </section>
     <section class="block block--dark block--skewed-right block-showcase">
       <header class="block__header">
         <h2>Care for everybody</h2>
@@ -341,7 +346,7 @@ data-aos-duration="1000">
         </ul>
       </div>
     </section>
-    <section class="block">
+    <section class="block" data-aos="fade-up" data-aos-duration="1000">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>
